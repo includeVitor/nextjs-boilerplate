@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Counter } from "../components";
 import { ApiRoutes } from "../config/constants";
 import { PostsType } from "../pages/api/posts";
 import styles from "./page.module.css";
@@ -20,8 +21,12 @@ export default async function Home() {
         </li>
     ));
 
+    const date = new Date();
+
     return (
         <section className={styles.container}>
+            <Counter />
+            <p>{date.toUTCString()}</p>
             <article
                 className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
             >
