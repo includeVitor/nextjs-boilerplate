@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Counter } from "../components";
 import { ApiRoutes } from "../config/constants";
 import { PostsType } from "../pages/api/posts";
 import styles from "./page.module.css";
@@ -10,7 +9,7 @@ const getPosts = async (): Promise<PostsType> => {
     return posts.json();
 };
 
-export default async function Home() {
+export default async function Page() {
     const posts = await getPosts();
 
     const list = posts.map(({ id, date, title }) => (
@@ -25,7 +24,6 @@ export default async function Home() {
 
     return (
         <section className={styles.container}>
-            <Counter />
             <p>{date.toUTCString()}</p>
             <article
                 className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
