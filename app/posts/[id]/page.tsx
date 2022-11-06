@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { ApiRoutes } from "../../../config/constants";
-import { PostType } from "../../../pages/api/posts/[id]";
+import { PostType } from "../../../config/types";
 
 const getPost = async (id: string): Promise<PostType | undefined> => {
     const post = await fetch(`${ApiRoutes.post}/${id}`);

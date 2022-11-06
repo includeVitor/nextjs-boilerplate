@@ -1,8 +1,5 @@
-import Link from "next/link";
-import { ApiRoutes } from "../config/constants";
-import { PostsType } from "../pages/api/posts";
-import styles from "./page.module.css";
-import utilStyles from "./utils.module.css";
+import { ApiRoutes } from "@config/constants";
+import { PostsType } from "@config/types";
 
 const getPosts = async (): Promise<PostsType> => {
     const posts = await fetch(ApiRoutes.posts);
@@ -12,25 +9,22 @@ const getPosts = async (): Promise<PostsType> => {
 export default async function Page() {
     const posts = await getPosts();
 
-    const list = posts.map(({ id, date, title }) => (
-        <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>{title}</Link>
-            <br />
-            <small className={utilStyles.lightText}>{date}</small>
-        </li>
-    ));
-
-    const date = new Date();
-
     return (
-        <section className={styles.container}>
-            <p>{date.toUTCString()}</p>
-            <article
-                className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
-            >
-                <h2 className={utilStyles.headingLg}>Blog</h2>
-                <ul className={utilStyles.list}>{list}</ul>
+        <section className="flex justify-center items-center">
+            <article>
+                <h2>Blog</h2>
             </article>
+            <nav>
+                <ul>
+                    {posts.map((post) => (
+                        <li key={post.id}>
+                            <a href={post.href}>{post.title}</a>
+                            <br />
+                            <small>{post.date}</small>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
         </section>
     );
 }

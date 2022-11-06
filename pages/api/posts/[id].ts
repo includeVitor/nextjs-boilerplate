@@ -1,9 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-
-export type PostType = {
-    id: string;
-    content: string;
-};
+import { PostType } from "../../../config/types";
 
 const data = [
     {

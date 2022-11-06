@@ -1,22 +1,19 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-
-export type PostsType = {
-    id: string;
-    title: string;
-    date: string;
-}[];
+import { PostsType } from "../../config/types";
 
 const data = [
     {
-        id: "ssg-ssr",
+        id: 1,
         title: "When to Use Static Generation v.s. Server-side Rendering",
         date: "2020-01-02",
+        href: "/posts/ssg-ssr",
     },
     {
-        id: "pre-rendering",
+        id: 2,
         title: "Two Forms of Pre-rendering",
         date: "2020-01-01",
+        href: "/posts/pre-rendering",
     },
 ];
 
