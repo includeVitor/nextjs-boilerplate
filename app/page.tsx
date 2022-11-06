@@ -10,7 +10,7 @@ export default async function Page() {
     const posts = await getPosts();
 
     return (
-        <section className="flex flex-col justify-center items-center h-full">
+        <section className="flex flex-col justify-center items-center h-screen w-screen">
             <article>
                 <h1 className="pb-8 text-2xl">Blog</h1>
             </article>

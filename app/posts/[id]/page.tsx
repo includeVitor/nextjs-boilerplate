@@ -1,6 +1,6 @@
+import { ApiRoutes } from "@config/constants";
+import { PostType } from "@config/types";
 import { notFound } from "next/navigation";
-import { ApiRoutes } from "../../../config/constants";
-import { PostType } from "../../../config/types";
 
 const getPost = async (id: string): Promise<PostType | undefined> => {
     const post = await fetch(`${ApiRoutes.post}/${id}`);
@@ -16,9 +16,11 @@ export default async function Page({ params }: { params: PostType }) {
     }
 
     return (
-        <div style={{ width: "50vw" }}>
-            <h1>{post.id}</h1>
-            <p>{post.content}</p>
-        </div>
+        <section className="w-screen h-screen flex items-center justify-center">
+            <article className="flex flex-col items-center max-w-2xl">
+                <h1 className="mb-8 text-2xl">{post.id}</h1>
+                <p>{post.content}</p>
+            </article>
+        </section>
     );
 }
