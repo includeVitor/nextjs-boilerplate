@@ -1,5 +1,4 @@
-import Footer from "@components/Footer";
-import Header from "@components/Header";
+import { Footer, Header } from "@components/ui";
 import { AppAssets } from "@config/constants";
 import { Poppins } from "@next/font/google";
 import "@styles/main.css";
