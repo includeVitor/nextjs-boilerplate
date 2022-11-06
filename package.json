@@ -10,7 +10,9 @@
         "format": "prettier --write .",
         "test": "jest --watchAll",
         "test:coverage": "jest test --coverage --watchAll=false  --coverageDirectory=./coverage",
-        "test:u": "jest test --watchAll=false -u"
+        "test:u": "jest test --watchAll=false -u",
+        "type-check": "tsc --pretty --noEmit",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@next/font": "^13.0.2",
@@ -27,6 +29,7 @@
         "autoprefixer": "^10.4.13",
         "eslint": "8.26.0",
         "eslint-config-next": "^13.0.2",
+        "husky": "^8.0.1",
         "jest": "^29.2.2",
         "jest-environment-jsdom": "^29.2.2",
         "postcss": "^8.4.18",
