@@ -31,7 +31,6 @@ jobs:
 
             - name: Building the project
               run: yarn build
-              env:
 
             - name: Running Coverage
               run: yarn test:coverage
