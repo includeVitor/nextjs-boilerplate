@@ -10,17 +10,28 @@ export default async function Page() {
     const posts = await getPosts();
 
     return (
-        <section className="flex justify-center items-center">
+        <section className="flex flex-col justify-center items-center h-full">
             <article>
-                <h2>Blog</h2>
+                <h1 className="pb-8 text-2xl">Blog</h1>
             </article>
             <nav>
                 <ul>
                     {posts.map((post) => (
-                        <li key={post.id}>
-                            <a href={post.href}>{post.title}</a>
+                        <li key={post.id} className="mb-4">
+                            <a
+                                href={post.href}
+                                className="text-blue-600 underline hover:text-blue-400"
+                            >
+                                {post.title}
+                            </a>
                             <br />
-                            <small>{post.date}</small>
+                            <small>
+                                {new Date(post.date).toLocaleString("en-US", {
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "numeric",
+                                })}
+                            </small>
                         </li>
                     ))}
                 </ul>

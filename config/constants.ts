@@ -3,4 +3,8 @@ enum ApiRoutes {
     post = "http://localhost:3000/api/posts",
 }
 
-export { ApiRoutes };
+enum AppAssets {
+    favicon = "./favicon.ico",
+}
+
+export { ApiRoutes, AppAssets };
