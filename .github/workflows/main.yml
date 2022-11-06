@@ -29,8 +29,5 @@ jobs:
             - name: Install dependencies
               run: yarn --verbose
 
-            - name: Building the project
-              run: yarn build
-
             - name: Running Coverage
               run: yarn test:coverage
