@@ -2,6 +2,6 @@
 
 exports[`Button Should be able to match snapshot 1`] = `
 <button>
-  Simple
+  Simple Button
 </button>
 `;

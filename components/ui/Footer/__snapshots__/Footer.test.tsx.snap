@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Should be able to render footer inside posts segment 1`] = `
+<footer
+  class="mt-12 text-blue-500 hover:underline text-lg"
+>
+  <a
+    href="/"
+  >
+    ← Back to home
+  </a>
+</footer>
+`;
+
+exports[`Footer Should be able to render footer outside posts segment 1`] = `null`;

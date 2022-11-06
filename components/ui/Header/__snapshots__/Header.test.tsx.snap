@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Should be able to render header inside posts segment 1`] = `
+<header>
+  <a
+    class="flex flex-col items-center justify-center"
+    href="/"
+  >
+    <img
+      alt="profile pic"
+      class="rounded-full cursor-pointer"
+      data-nimg="1"
+      decoding="async"
+      height="108"
+      loading="lazy"
+      src="/_next/image?url=%2Fprofile.jpg&w=256&q=75"
+      srcset="/_next/image?url=%2Fprofile.jpg&w=128&q=75 1x, /_next/image?url=%2Fprofile.jpg&w=256&q=75 2x"
+      style="color: transparent;"
+      width="108"
+    />
+    <h2
+      class="pt-4 pb-6 text-3xl hover:underline cursor-pointer font-bold"
+    >
+      Username
+    </h2>
+  </a>
+</header>
+`;
+
+exports[`Header Should be able to render header outside posts segment 1`] = `
+<header
+  class="flex flex-col items-center justify-center"
+>
+  <img
+    alt="profile pic"
+    class="rounded-full"
+    data-nimg="1"
+    decoding="async"
+    height="144"
+    loading="lazy"
+    src="/_next/image?url=%2Fprofile.jpg&w=384&q=75"
+    srcset="/_next/image?url=%2Fprofile.jpg&w=256&q=75 1x, /_next/image?url=%2Fprofile.jpg&w=384&q=75 2x"
+    style="color: transparent;"
+    width="144"
+  />
+  <h1
+    class="pt-4 pb-6 text-4xl font-extrabold"
+  >
+    Username
+  </h1>
+</header>
+`;
