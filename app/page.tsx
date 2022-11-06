@@ -10,17 +10,15 @@ export default async function Page() {
     const posts = await getPosts();
 
     return (
-        <section className="flex flex-col justify-center items-center h-screen w-screen">
-            <article>
-                <h1 className="pb-8 text-2xl">Blog</h1>
-            </article>
-            <nav>
+        <section>
+            <h2 className="pb-6 text-2xl font-semibold">Blog</h2>
+            <nav className="text-xl">
                 <ul>
                     {posts.map((post) => (
                         <li key={post.id} className="mb-4">
                             <a
                                 href={post.href}
-                                className="text-blue-600 underline hover:text-blue-400"
+                                className="text-blue-600 hover:underline"
                             >
                                 {post.title}
                             </a>

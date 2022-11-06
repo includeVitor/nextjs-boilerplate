@@ -1,13 +1,18 @@
+import Footer from "@components/Footer";
+import Header from "@components/Header";
 import { AppAssets } from "@config/constants";
+import { Poppins } from "@next/font/google";
 import "@styles/main.css";
 
-export default async function RootLayout({
+const poppins = Poppins({ weight: "400" });
+
+export default function RootLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className={poppins.className}>
             <head>
                 <title>Template</title>
                 <meta
@@ -16,7 +21,11 @@ export default async function RootLayout({
                 />
                 <link rel="icon" href={AppAssets.favicon} />
             </head>
-            <body>{children}</body>
+            <body className="p-4 h-screen max-w-xl mt-12 mb-24 mx-auto">
+                <Header />
+                {children}
+                <Footer />
+            </body>
         </html>
     );
 }

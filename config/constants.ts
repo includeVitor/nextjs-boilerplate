@@ -4,7 +4,16 @@ enum ApiRoutes {
 }
 
 enum AppAssets {
-    favicon = "./favicon.ico",
+    favicon = "/favicon.ico",
+    profile = "/profile.jpg",
 }
 
-export { ApiRoutes, AppAssets };
+enum AppSegments {
+    posts = "posts",
+}
+
+enum AppRoutes {
+    home = "/",
+}
+
+export { ApiRoutes, AppAssets, AppSegments, AppRoutes };
