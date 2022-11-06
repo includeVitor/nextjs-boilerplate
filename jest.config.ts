@@ -2,18 +2,18 @@
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
-import { pathsToModuleNameMapper } from "ts-jest";
-import nextJest from "next/jest";
-import { compilerOptions } from "./tsconfig.json";
+import { pathsToModuleNameMapper } from 'ts-jest'
+import nextJest from 'next/jest'
+import { compilerOptions } from './tsconfig.json'
 
 const createJestConfig = nextJest({
     // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
-    dir: "./",
-});
+    dir: './'
+})
 
 const moduleNameMapper = pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: "<rootDir>",
-});
+    prefix: '<rootDir>'
+})
 
 const customJestConfig = {
     // All imported modules in your tests should be mocked automatically
@@ -35,16 +35,16 @@ const customJestConfig = {
     // collectCoverageFrom: undefined,
 
     // The directory where Jest should output its coverage files
-    coverageDirectory: "coverage",
+    coverageDirectory: 'coverage',
 
     // An array of regexp pattern strings used to skip coverage collection
-    coveragePathIgnorePatterns: ["^.+\\.(png|svg)$", "/node_modules/"],
+    coveragePathIgnorePatterns: ['^.+\\.(png|svg)$', '/node_modules/'],
 
     // Indicates which provider should be used to instrument code for coverage
-    coverageProvider: "v8",
+    coverageProvider: 'v8',
 
     // A list of reporter names that Jest uses when writing coverage reports
-    coverageReporters: ["json", "text", "lcov", "clover"],
+    coverageReporters: ['json', 'text', 'lcov', 'clover'],
 
     // An object that configures minimum threshold enforcement for coverage results
     // coverageThreshold: undefined,
@@ -81,7 +81,7 @@ const customJestConfig = {
     // ],
 
     // An array of file extensions your modules use
-    moduleFileExtensions: ["ts", "js", "tsx", "jsx"],
+    moduleFileExtensions: ['ts', 'js', 'tsx', 'jsx'],
 
     // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
     moduleNameMapper,
@@ -96,7 +96,7 @@ const customJestConfig = {
     // notifyMode: "failure-change",
 
     // A preset that is used as a base for Jest's configuration
-    preset: "ts-jest",
+    preset: 'ts-jest',
 
     // Run tests from one or more projects
     // projects: undefined,
@@ -131,7 +131,7 @@ const customJestConfig = {
     // setupFiles: [],
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
-    setupFilesAfterEnv: ["<rootDir>/config/setup-tests.ts"],
+    setupFilesAfterEnv: ['<rootDir>/config/setup-tests.ts'],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
@@ -140,7 +140,7 @@ const customJestConfig = {
     // snapshotSerializers: [],
 
     // The test environment that will be used for testing
-    testEnvironment: "jest-environment-jsdom",
+    testEnvironment: 'jest-environment-jsdom',
 
     // Options that will be passed to the testEnvironment
     // testEnvironmentOptions: {},
@@ -155,7 +155,7 @@ const customJestConfig = {
     // ],
 
     // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-    testPathIgnorePatterns: ["/dist/", "/node_modules/"],
+    testPathIgnorePatterns: ['/dist/', '/node_modules/']
 
     // The regexp pattern or array of patterns that Jest uses to detect test files
     // testRegex: [],
@@ -186,6 +186,6 @@ const customJestConfig = {
 
     // Whether to use watchman for file crawling
     // watchman: true,
-};
+}
 
-export default createJestConfig(customJestConfig);
+export default createJestConfig(customJestConfig)

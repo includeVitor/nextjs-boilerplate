@@ -1,19 +1,19 @@
 enum ApiRoutes {
-    posts = "http://localhost:3000/api/posts",
-    post = "http://localhost:3000/api/posts",
+    posts = 'http://localhost:3000/api/posts',
+    post = 'http://localhost:3000/api/posts'
 }
 
 enum AppAssets {
-    favicon = "/favicon.ico",
-    profile = "/profile.jpg",
+    favicon = '/favicon.ico',
+    profile = '/profile.jpg'
 }
 
 enum AppSegments {
-    posts = "posts",
+    posts = 'posts'
 }
 
 enum AppRoutes {
-    home = "/",
+    home = '/'
 }
 
-export { ApiRoutes, AppAssets, AppSegments, AppRoutes };
+export { ApiRoutes, AppAssets, AppSegments, AppRoutes }

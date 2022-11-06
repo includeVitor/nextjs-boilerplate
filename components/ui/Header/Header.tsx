@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import { AppAssets, AppRoutes, AppSegments } from "@config/constants";
-import Image from "next/image";
-import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+import { AppAssets, AppRoutes, AppSegments } from '@config/constants'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useSelectedLayoutSegment } from 'next/navigation'
 
 const Header = () => {
-    const segment = useSelectedLayoutSegment();
+    const segment = useSelectedLayoutSegment()
 
     if (segment === AppSegments.posts)
         return (
@@ -27,7 +27,7 @@ const Header = () => {
                     </h2>
                 </Link>
             </header>
-        );
+        )
 
     return (
         <header className="flex flex-col items-center justify-center">
@@ -40,7 +40,7 @@ const Header = () => {
             />
             <h1 className="pt-4 pb-6 text-4xl font-extrabold">Username</h1>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

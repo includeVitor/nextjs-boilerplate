@@ -1,13 +1,13 @@
 type PostsType = {
-    id: number;
-    title: string;
-    date: string;
-    href: string;
-}[];
+    id: number
+    title: string
+    date: string
+    href: string
+}[]
 
 type PostType = {
-    id: string;
-    content: string;
-};
+    id: string
+    content: string
+}
 
-export type { PostsType, PostType };
+export type { PostsType, PostType }

@@ -1,14 +1,14 @@
-import { Footer, Header } from "@components/ui";
-import { AppAssets } from "@config/constants";
-import { Poppins } from "@next/font/google";
-import "@styles/main.css";
+import { Footer, Header } from '@components/ui'
+import { AppAssets } from '@config/constants'
+import { Poppins } from '@next/font/google'
+import '@styles/main.css'
 
-const poppins = Poppins({ weight: "400" });
+const poppins = Poppins({ weight: '400' })
 
 export default function RootLayout({
-    children,
+    children
 }: {
-    children: React.ReactNode;
+    children: React.ReactNode
 }) {
     return (
         <html lang="en" className={poppins.className}>
@@ -26,6 +26,5 @@ export default function RootLayout({
                 <Footer />
             </body>
         </html>
-    );
+    )
 }
-
