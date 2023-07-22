@@ -1,4 +1,4 @@
-## Nextjs13 boierplate
+## Nextjs boierplate
 
 [![Main CI](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml)
 
