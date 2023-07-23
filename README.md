@@ -5,12 +5,6 @@ Running locally:
 - Start the application with `yarn dev`
 - Now you can visit [`localhost:3000`](http://localhost:3000) from your browser
 
-Running in prod:
-- Run `yarn` to install all dependencies
-- Run `yarn build` to build the prod files 
-- Start the application with `yarn start`
-- Now you can visit [`localhost:3000`](http://localhost:3000) from your browser
-
 Running tests:
 - Run `yarn test` to execute the tests
 - Run `yarn test:coverage` to execute the tests and export the reports to `/coverage` folder
@@ -21,3 +15,5 @@ Checking types:
 
 Formatting:
 - Format all files with `yarn format`
+
+Ready to run in production? Please [check our deployment guides](https://nextjs.org/docs/pages/building-your-application/deploying).
