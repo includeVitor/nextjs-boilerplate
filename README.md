@@ -14,5 +14,8 @@ Running tests:
 - Run `yarn test:coverage` to execute the tests and export the reports to `/coverage` folder
 - Run `yarn test:u` to update the snapshots tests
 
+Checking types:
+- Check types of all files with `yarn type-check`
+
 Formatting:
 - Format all files with `yarn format`
