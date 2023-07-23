@@ -1,6 +1,7 @@
 # Nextjs boilerplate
 
 [![Main CI](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/includeVitor/nextjs-boilerplate/branch/main/graph/badge.svg?token=K9N64WL9L7)](https://codecov.io/gh/includeVitor/nextjs-boilerplate)
 
 To start your application:
 
