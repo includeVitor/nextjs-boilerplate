@@ -3,13 +3,13 @@
 Running locally:
 - Run `yarn` to install all dependencies
 - Start the application with `yarn dev`
-- Now you can visit [`localhost:3000`](http://localhost:3000) from your browser.
+- Now you can visit [`localhost:3000`](http://localhost:3000) from your browser
 
 Running in prod:
 - Run `yarn` to install all dependencies
 - Run `yarn build` to build the prod files 
 - Start the application with `yarn start`
-- Now you can visit [`localhost:3000`](http://localhost:3000) from your browser.
+- Now you can visit [`localhost:3000`](http://localhost:3000) from your browser
 
 Running tests:
 - Run `yarn test` to execute the tests
