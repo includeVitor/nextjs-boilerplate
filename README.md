@@ -1,52 +1,18 @@
-# Nextjs boilerplate
+# nextjs-boilerplate &middot; [![Main CI](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/includeVitor/nextjs-boilerplate/branch/main/graph/badge.svg?token=K9N64WL9L7)](https://codecov.io/gh/includeVitor/nextjs-boilerplate)
 
-[![Main CI](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/includeVitor/nextjs-boilerplate/branch/main/graph/badge.svg?token=K9N64WL9L7)](https://codecov.io/gh/includeVitor/nextjs-boilerplate)
+Running locally:
+- Run `yarn` to install all dependencies
+- Start the website with `yarn dev`
 
-To start your application:
+Running in prod:
+- Run `yarn` to install all dependencies
+- Run `yarn build` to build the prod files 
+- Start the website with `yarn start`
 
-- Install all dependencies
+Running tests:
+- Run `yarn test` to execute the tests
+- Run `yarn test:coverage` to execute the tests and export the reports to `/output/coverage` folder
+- Run `yarn test:u` to update the snapshots tests
 
-  ```
-    yarn
-  ```
-
-- Executes the website in http://localhost:3000/
-
-  ```
-    yarn dev
-  ```
-
-- Running tests in watch mode (mostly used for development)
-
-  ```
-    yarn test
-  ```
-
-- Running tests and export the reports to repo /output/coverage (mostly used for collect metrics)
-
-  ```
-    yarn test:coverage
-  ```
-
-- Updating snapshot tests
-
-  ```
-    yarn test:u
-  ```
-
-- Formatting all files using prettier
-
-  ```
-    yarn format
-  ```
-
-- Building for production
-
-  ```
-    yarn build
-  ```
-
-  ```
-    yarn start
-  ```
+Formatting:
+- Format all files with `yarn format`
