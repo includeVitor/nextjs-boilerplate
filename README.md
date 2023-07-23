@@ -1,4 +1,4 @@
-# nextjs-boilerplate &middot; [![Main CI](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/includeVitor/nextjs-boilerplate/branch/main/graph/badge.svg?token=K9N64WL9L7)](https://codecov.io/gh/includeVitor/nextjs-boilerplate)
+# nextjs-boilerplate &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/includeVitor/nextjs-boilerplate/blob/main/LICENSE) [![Main CI](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/includevitor/next13-boilerplate/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/includeVitor/nextjs-boilerplate/branch/main/graph/badge.svg?token=K9N64WL9L7)](https://codecov.io/gh/includeVitor/nextjs-boilerplate)
 
 Running locally:
 - Run `yarn` to install all dependencies
