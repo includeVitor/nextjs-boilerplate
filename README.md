@@ -11,7 +11,7 @@ Running in prod:
 
 Running tests:
 - Run `yarn test` to execute the tests
-- Run `yarn test:coverage` to execute the tests and export the reports to `/output/coverage` folder
+- Run `yarn test:coverage` to execute the tests and export the reports to `/coverage` folder
 - Run `yarn test:u` to update the snapshots tests
 
 Formatting:
