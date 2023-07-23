@@ -16,12 +16,12 @@ jobs:
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
               with:
                   fetch-depth: 0
 
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v3
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'yarn'
@@ -29,5 +29,14 @@ jobs:
             - name: Install dependencies
               run: yarn --verbose
 
+            - name: run type-checking
+              run: yarn type-check
+
+            - name: run linting
+              run: yarn lint
+
             - name: Running Coverage
               run: yarn test:coverage
+
+            - name: Upload coverage to Codecov
+              uses: codecov/codecov-action@v1
