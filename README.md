@@ -2,12 +2,12 @@
 
 Running locally:
 - Run `yarn` to install all dependencies
-- Start the website with `yarn dev`
+- Start the application with `yarn dev`
 
 Running in prod:
 - Run `yarn` to install all dependencies
 - Run `yarn build` to build the prod files 
-- Start the website with `yarn start`
+- Start the application with `yarn start`
 
 Running tests:
 - Run `yarn test` to execute the tests
